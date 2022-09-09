@@ -1,5 +1,12 @@
+import Pages from "./pages/Pages";
+import "./App.css"
+
 function App() {
-  return <div>Hello world!</div>;
+  return <>
+    
+    <Pages/>
+  
+  </>;
 }
 
 export default App;
