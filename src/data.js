@@ -6,6 +6,14 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
 
+export const nav = [
+  {
+    logo: "/img/logo.png",
+  },
+  
+]
+
+
 export const navlink = [
   {
     path: "/",

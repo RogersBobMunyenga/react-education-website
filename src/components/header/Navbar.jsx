@@ -1,11 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { navlink } from '../../data'
-import  logo  from "../../img/logo.png";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react"
-
+import { nav } from "../../data";
 
 
 const Navbar = () => {
@@ -13,10 +12,14 @@ const Navbar = () => {
   return (
       <>
           
-              <nav>
+          <nav>
+              {nav.map((item) => (
+
+              
                   <a href="/">
-                      <img src={logo} alt="" />
+                      <img src={item.logo} alt="" />
                   </a>
+                  ))}
                   <div className={toggleMenu ? "menu-toggle" : "navlinks"} >
 
                       <ul >
