@@ -10,8 +10,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./img/banner.png);
-
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/public/img/banner.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -368,7 +367,7 @@ h3{
 .cta{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./img/banner2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/public/img/banner2.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -411,6 +410,54 @@ h3{
     
  }
 
+ /* ***ABOUT US********* */
+ .about{
+     height: 50vh;
+     width: 100%;
+     background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/public/img/background.jpg);
+     background-position: center;
+     background-size: cover;
+     text-align: center;
+     color: #fff;
+ }
 
+ .about h2{
+     margin-top: 100px;
+ }
+
+ .about-content{
+     width: 80%;
+     margin: auto;
+     padding-top: 80px;
+     padding-bottom: 50px;
+   
+ }
+
+ .about-col{
+     flex-basis:48%;
+     padding: 30px 2px;
+ }
+
+ .about-col img{
+     width: 100%;
+ }
+
+ .about-col h2{
+     padding-top: 0;
+ }
+
+ .about-col p{
+     padding: 15px 0 25px;
+ }
+
+ .red-btn{
+     border: 1px solid #f44336;
+     background: transparent;
+     color: #f44336;
+ }
+
+ .red-btn:hover{
+     color:#fff;
+ }
 
 
