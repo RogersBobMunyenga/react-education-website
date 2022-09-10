@@ -1,13 +1,14 @@
 import React from 'react'
 import Header from '../components/header/Header'
-import Courses from './Courses'
+import HomeComponents from '../components/home/HomeComponents'
+
 
 const Home = () => {
   return (
       <>
           
           <Header/>
-          <Courses/>
+          <HomeComponents/>
       
       </>
   )

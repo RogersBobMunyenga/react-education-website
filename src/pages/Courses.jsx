@@ -1,24 +1,27 @@
 import React from 'react'
-import Campus from '../components/courses/Campus'
-import Cta from '../components/courses/Cta'
 import Facilities from '../components/courses/Facilities'
 import Offers from '../components/courses/Offers'
-import Testimonials from '../components/courses/Testimonials'
 import Footer from '../components/footer/Footer'
+import Navbar from '../components/header/Navbar'
 
-
-const Courses = () => {
+const Course = () => {
   return (
     <>
+      <section className="about">
+        <Navbar />
+        <h2>Our Courses</h2>
+
+
+      </section>
       <Offers/>
-      <Campus/>
       <Facilities/>
-      <Testimonials/>
-      <Cta/>
-      <Footer/>
+        
+
+       <Footer/>   
+          
       
-    </>
+      </>
   )
 }
 
-export default Courses
+export default Course
