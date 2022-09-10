@@ -1,18 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { navlink } from '../data'
-import logo from "../img/logo.png"
+import { navlink } from '../../data'
+import  logo  from "../../img/logo.png";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react"
 
 
 
-const Header = () => {
+const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false)
   return (
       <>
-          <section className="header">
+          
               <nav>
                   <a href="/">
                       <img src={logo} alt="" />
@@ -29,7 +29,7 @@ const Header = () => {
                       ))}
                       </ul>
                   </div>
-                  <div className="toggle">
+                  <div className="toggle ">
                       <div className='toggle-btn' onClick={() => setToggleMenu(!toggleMenu)}>
                           {toggleMenu ? <CloseIcon className='icon'/> : <MenuIcon className='icon'/> }
                       </div>
@@ -37,20 +37,12 @@ const Header = () => {
                 
               </nav>
              
-              <div className="text-box">
-                  <h1>World's Biggest University</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nisi ut ipsa vitae dolor?
-                      Eveniet voluptas labore,
-                      quam quas quo ipsum ex qui et sequi nesciunt,
-                      aliquam ab laborum culpa dolorum?</p>
-                        <a className='hero-btn' href="/">Learn More</a>
-              </div>
-          </section>
+             
+          
           
       
       </>
   )
 }
 
-export default Header
+export default Navbar
